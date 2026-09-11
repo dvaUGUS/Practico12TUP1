@@ -43,3 +43,122 @@ footer{
     background-color: lightgray;
 }
 
+/* ===================== Carrito de compras ===================== */
+
+main{
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.cart-item img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: gray;
+}
+
+.cart-item-info{
+    flex: 1;
+}
+
+.cart-item-info h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cart-item-price{
+    color: #555;
+}
+
+.cart-item-qty{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-item-qty button,
+.btn-vaciar-carrito,
+.btn-remove{
+    border: none;
+    background-color: gray;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-remove{
+    width: auto;
+    padding: 0 10px;
+    background-color: #b33a3a;
+}
+
+.btn-vaciar-carrito{
+    width: auto;
+    padding: 8px 15px;
+    background-color: #b33a3a;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.empty-cart-message{
+    text-align: center;
+    color: #777;
+    padding: 30px 0;
+}
+
+.cart-summary{
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: lightgray;
+    border-radius: 8px;
+    text-align: right;
+}
+
+.cart-summary p{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.btn-checkout{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-checkout:hover,
+.btn-vaciar-carrito:hover,
+.btn-remove:hover,
+.cart-item-qty button:hover{
+    opacity: 0.85;
+}
