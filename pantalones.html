@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estilo UTN - Pantalones y Calzado</title>
+    <link rel="stylesheet" href="pantalones.css">
+    <link rel="icon" href="assets/icon/icon.png">
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="enlace-logo">
+            <h1><i>Estilo UTN</i></h1></a>
+    </header>
+
+    <nav id="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="buzos.html">Buzos y camperas</a>
+        <a href="pantalones.html" class="activo">Pantalones y calzado</a>
+        <a href="carrito.html">
+            Carrito (<span id="cart_counter">0</span>)
+        </a>
+    </nav>
+
+    <main class="contenedor">
+        <section class="seccion_principal">
+            <h2>Colección de Pantalones y Calzado</h2>
+            <p>El estilo perfecto para cada ocasión.</p>
+        </section>
+
+        <div class="barra_filtros">
+            <div class="grupo_filtro">
+                <label for="filter-category">Categoría:</label>
+                <select id="filter-category">
+                    <option value="all">Todos los productos</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="calzado">Calzado</option>
+                </select>
+            </div>
+            <div class="grupo_filtro">
+                <label for="sort-price">Ordenar por:</label>
+                <select id="sort-price">
+                    <option value="low">Menor precio</option>
+                    <option value="high">Mayor precio</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- sección de los pantalones. -->
+        <h3 class="titulo_seccion">Pantalones</h3>
+        <section class="grilla_productos">
+            
+            <article class="tarjeta_producto" data-category="pantalones" data-price="55000">
+                <img src="zapas_calzado/pantalon1.png" alt="Pantalón Deportivo Nike" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Pantalones</span>
+                    <h3>Pantalón Deportivo Nike</h3>
+                    <p class="precio_producto">$55.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="pantalones" data-price="62000">
+                <img src="zapas_calzado/pantalon2.png" alt="Pantalón Jogger New Balance" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Pantalones</span>
+                    <h3>Pantalón Jogger New Balance</h3>
+                    <p class="precio_producto">$62.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="pantalones" data-price="68000">
+                <img src="zapas_calzado/pantalon3.png" alt="Pantalón Cargo Black Nike" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Pantalones</span>
+                    <h3>Pantalón Cargo Black Nike</h3>
+                    <p class="precio_producto">$68.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="pantalones" data-price="68000">
+                <img src="zapas_calzado/pantalon4.png" alt="Pantalón Adidas Pink" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Pantalones</span>
+                    <h3>Pantalón Adidas Pink</h3>
+                    <p class="precio_producto">$68.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- sección de las zapas!!-->
+        <h3 class="titulo_seccion">Calzado</h3>
+        <section class="grilla_productos">
+
+            <article class="tarjeta_producto" data-category="calzado" data-price="230000">
+                <img src="zapas_calzado/zapas4.jpg" alt="Zapatillas Adidas Samba - Unisex" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Calzado</span>
+                    <h3>Zapatillas Adidas Samba</h3>
+                    <p class="precio_producto">$230.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="calzado" data-price="186000">
+                <img src="zapas_calzado/zapas1.jpg" alt="Zapatillas New Balance" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Calzado</span>
+                    <h3>Zapatillas New Balance</h3>
+                    <p class="precio_producto">$186.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="calzado" data-price="190000">
+                <img src="zapas_calzado/zapas2.jpg" alt="Zapatillas Adidas Spezial" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Calzado</span>
+                    <h3>Zapatillas Adidas Spezial</h3>
+                    <p class="precio_producto">$190.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+
+            <article class="tarjeta_producto" data-category="calzado" data-price="190000">
+                <img src="zapas_calzado/zapas3.jpg" alt="Zapatillas Puma Speedcat" class="imagen_producto">
+                <div class="info_producto">
+                    <span class="etiqueta_producto">Calzado</span>
+                    <h3>Zapatillas Puma Speedcat</h3>
+                    <p class="precio_producto">$190.000</p>
+                    <button class="boton_agregar_carrito">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer> Grupo de Augusto De Vuono, Matias Barrios, Julieta Pereyra y Lucio Caturegli</footer>
+    <script src="script.js"></script>
+</body>
+</html>
