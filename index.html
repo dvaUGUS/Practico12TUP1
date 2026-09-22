@@ -12,15 +12,28 @@
         <a href="index.html" style="text-decoration: none; color: inherit;"><h1><i>Estilo UTN</i></h1></a>
     </header>
     <nav>
-        <a href="buzos.html" style="margin-right: 50px;">Buzos y camperas</a>
+        <button id="menu">☰</button>
+        <div id="enlaces">
+        <a href="index.html" >Inicio</a>
+        <a href="buzos.html" >Buzos y camperas</a>
         <a href="pantalones.html">Pantalones y calzado</a>
-        <a href="carrito.html" style="margin-left: 50px;">Carrito</a>
+        <a href="carrito.html">Carrito(<span id="cart_counter">0</span>)</a>
+        </div>
     </nav>
-    <main >
-        <img src="assets/images/Foto1.jpg" alt="Buzo Nike" style="width: 33%;">
-        <img src="assets/images/Foto2.jfif" alt="Pantalon Adidas" style="width: 33%;">
-        <img src="assets/images/Foto3.jpg" alt="Zapas New Balance" style="width: 33%;">
+    <main class="carrusel-container">
+        <div class="carrusel-track">
+            <!-- Primera tanda de imágenes -->
+            <img src="assets/images/Foto1.jpg" alt="Buzo Nike">
+            <img src="assets/images/Foto2.jfif" alt="Pantalon Adidas">
+            <img src="assets/images/Foto3.jpg" alt="Zapas New Balance">
+    
+            <!-- Tanda duplicada para lograr un bucle infinito continuo -->
+            <img src="assets/images/Foto1.jpg" alt="Buzo Nike">
+            <img src="assets/images/Foto2.jfif" alt="Pantalon Adidas">
+            <img src="assets/images/Foto3.jpg" alt="Zapas New Balance">
+        </div>
     </main>
     <footer>Grupo de Augusto De Vuono, Matias Barrios, Julieta Pereyra y Lucio Caturegli</footer>
+    <script src="script.js"></script>
 </body>
 </html>

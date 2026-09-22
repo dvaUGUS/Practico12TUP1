@@ -1,9 +1,12 @@
-let menu = document.querySelector("#menu");
-let enlaces = document.querySelector("#enlaces");
-menu.addEventListener("click", function() {
-    if (enlaces.style.display === "block") {
-        enlaces.style.display = "none"
-    }else{
-        enlaces.style.display = "block";
+const menu = document.getElementById("menu");
+const enlaces = document.getElementById("enlaces");
+
+menu.addEventListener("click", () => {
+
+    if (enlaces.style.display === "flex") {
+        enlaces.style.display = "none";
+    } else {
+        enlaces.style.display = "flex";
     }
+
 });
