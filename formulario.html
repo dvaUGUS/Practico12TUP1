@@ -6,6 +6,13 @@
     <title>Practico 1</title>
     <link rel="stylesheet" href="carrito.css">
     <link rel="icon" href="assets/icon/icon.png">
+    <style>
+        .error-message{
+            color: red;
+        }
+
+    </style>
+    
 </head>
 <body>
     <header>
@@ -24,8 +31,6 @@
 
         <h2>Finalizar compra</h2>
 
-        <!-- 8 campos: nombre, apellido, email, teléfono, dirección, fecha de entrega,
-             forma de envío (select), forma de pago (radio group), términos (checkbox) -->
         <form id="checkoutForm" class="checkout-form" novalidate>
 
             <div class="form-group">
@@ -79,7 +84,7 @@
                 <legend>Forma de pago</legend>
                 <label><input type="radio" name="pago" value="tarjeta" required> Tarjeta de crédito/débito</label>
                 <label><input type="radio" name="pago" value="transferencia"> Transferencia bancaria</label>
-                <label><input type="radio" name="pago" value="efectivo"> Efectivo contra entrega</label>
+                <label><input type="radio" name="pago" value="efectivo"> Efectivo</label>
                 <span class="error-message" id="error-pago"></span>
             </fieldset>
 
@@ -98,5 +103,6 @@
     <footer>Grupo de Augusto De Vuono, Matias Barrios, Julieta Pereyra y Lucio Caturegli</footer>
 
     <script src="script.js"></script>
+    <script src="formulario.js"></script>
 </body>
 </html>

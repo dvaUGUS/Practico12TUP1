@@ -58,6 +58,7 @@ function mostrarCarrito() {
     const cartItems = document.getElementById("cartItems");
     const cartTotal = document.getElementById("cartTotal");
     const emptyCartMessage = document.getElementById("emptyCartMessage");
+    const finalizarCompra = document.getElementById("finalizarCompra");
 
     // Si no estamos en carrito.html, no hacemos nada
     if (!cartItems) {
@@ -71,8 +72,10 @@ function mostrarCarrito() {
 
         emptyCartMessage.style.display = "block";
         cartTotal.textContent = "$0";
-
+        finalizarCompra.disabled = true;
         return;
+    }else{
+        finalizarCompra.disabled = false;
     }
 
     // Ocultar mensaje de carrito vacío
@@ -135,7 +138,13 @@ if (btnVaciarCarrito) {
     btnVaciarCarrito.addEventListener("click", vaciarCarrito);
 }
 
+const finalizarCompra = document.getElementById("finalizarCompra");
 
+if (finalizarCompra) {
+    finalizarCompra.addEventListener("click", () => {
+        window.location.href = "formulario.html";
+    });
+}
 
 
 
