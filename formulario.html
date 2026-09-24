@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 1</title>
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="icon" href="assets/icon/icon.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;"><h1><i>Estilo UTN</i></h1></a>
+    </header>
+    <nav>
+        <button id="menu">☰</button>
+        <div id="enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="buzos.html">Buzos y camperas</a>
+        <a href="pantalones.html">Pantalones y calzado</a>
+        <a href="carrito.html">Carrito (<span id="cart_counter">0</span>)</a>
+        </div>
+    </nav>
+    <main>
+
+        <h2>Finalizar compra</h2>
+
+        <!-- 8 campos: nombre, apellido, email, teléfono, dirección, fecha de entrega,
+             forma de envío (select), forma de pago (radio group), términos (checkbox) -->
+        <form id="checkoutForm" class="checkout-form" novalidate>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2">
+                <span class="error-message" id="error-nombre"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required minlength="2">
+                <span class="error-message" id="error-apellido"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="error-email"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,15}">
+                <span class="error-message" id="error-telefono"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección de envío</label>
+                <input type="text" id="direccion" name="direccion" required minlength="5">
+                <span class="error-message" id="error-direccion"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaEntrega">Fecha estimada de entrega</label>
+                <input type="date" id="fechaEntrega" name="fechaEntrega" required>
+                <span class="error-message" id="error-fechaEntrega"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="envio">Forma de envío</label>
+                <select id="envio" name="envio" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="estandar">Estándar (3-5 días)</option>
+                    <option value="express">Express (24 hs)</option>
+                    <option value="retiro">Retiro en local</option>
+                </select>
+                <span class="error-message" id="error-envio"></span>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Forma de pago</legend>
+                <label><input type="radio" name="pago" value="tarjeta" required> Tarjeta de crédito/débito</label>
+                <label><input type="radio" name="pago" value="transferencia"> Transferencia bancaria</label>
+                <label><input type="radio" name="pago" value="efectivo"> Efectivo contra entrega</label>
+                <span class="error-message" id="error-pago"></span>
+            </fieldset>
+
+            <div class="form-group form-group-checkbox">
+                <label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    Acepto los términos y condiciones
+                </label>
+                <span class="error-message" id="error-terminos"></span>
+            </div>
+
+            <button type="submit" class="btn-submit">Confirmar pedido</button>
+        </form>
+
+    </main>
+    <footer>Grupo de Augusto De Vuono, Matias Barrios, Julieta Pereyra y Lucio Caturegli</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
