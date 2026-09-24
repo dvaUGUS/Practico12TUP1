@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nombre": "Buzo 1",
+        "precio": 55000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Buzo 2",
+        "precio": 45000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Buzo 3",
+        "precio": 45000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto3.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Buzo 4",
+        "precio": 65000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Buzo 5",
+        "precio": 65000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto5.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Buzo 6",
+        "precio": 45000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Buzo 7",
+        "precio": 75000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto7.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Buzo 8",
+        "precio": 55000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Buzo 9",
+        "precio": 60000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto9.jpeg"
+    },
+    {
+        "id": 10,
+        "nombre": "Buzo 10",
+        "precio": 80000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Buzo 11",
+        "precio": 85000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Buzo 12",
+        "precio": 90000,
+        "categoria": "buzo/campera",
+        "img": "assets/images/producto12.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Pantalon Jogger Nike",
+        "precio": 45000,
+        "categoria": "pantalones",
+        "img": "assets/images/producto13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Pantalon Jogger New Balance",
+        "precio": 45000,
+        "categoria": "pantalones",
+        "img": "assets/images/producto14.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Pantalon Cargo Nike",
+        "precio": 55000,
+        "categoria": "pantalones",
+        "img": "assets/images/producto15.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Pantalon Deportivo Adidas",
+        "precio": 35000,
+        "categoria": "pantalones",
+        "img": "assets/images/producto16.jpg"
+    },
+    {
+        "id": 17,
+        "nombre": "New Balance",
+        "precio": 95000,
+        "categoria": "calzado",
+        "img": "assets/images/producto17.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "Spezial Adidas",
+        "precio": 115000,
+        "categoria": "calzado",
+        "img": "assets/images/producto18.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "Puma",
+        "precio": 100000,
+        "categoria": "calzado",
+        "img": "assets/images/producto19.jpg"
+    },
+    {
+        "id": 20,
+        "nombre": "Samba Adidas",
+        "precio": 125000,
+        "categoria": "calzado",
+        "img": "assets/images/producto20.jpg"
+    }
+]
