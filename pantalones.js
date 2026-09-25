@@ -77,9 +77,12 @@ function mostrarProductos() {
 
             </div>
         `;
+            const boton = article.querySelector(".boton_agregar_carrito");
 
+            boton.addEventListener("click", () => {
+                agregarAlCarrito(producto);
+            });
 
-        // Mandar el producto a su grilla correspondiente
         if (producto.categoria === "pantalones") {
 
             grillaPantalones.appendChild(article);

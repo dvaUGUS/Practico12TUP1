@@ -26,7 +26,14 @@ function mostrarProductos() {
             <p>$${producto.precio}</p>
             <button>Agregar al carrito</button>
         `;
-        contenedor.appendChild(div);
+
+    const boton = div.querySelector("button");
+
+    boton.addEventListener("click", () => {
+        agregarAlCarrito(producto);
+    });
+
+    contenedor.appendChild(div);
     });
 }
 ordenarPrecio.addEventListener("change", mostrarProductos);
